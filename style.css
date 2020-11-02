@@ -89,6 +89,7 @@ header h1 {
   }
   .nav-links li {
     opacity: 0;
+    background-color: red;
   }
   .burger div {
     display: block;
