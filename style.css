@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+nav {
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div.logo {
+  flex: 1;
+  padding: 15px;
+  width: 10%;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+ul.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 40%;
+  /* background-color: pink; */
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition: 0.3s ease-in-out;
+}
+ul li a:hover {
+  font-size: 16px;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("./halloween.jpg") no-repeat center;
+}
+header h1 {
+  color: white;
+  font-size: 60px;
+}
+.burger {
+  /* background-color: red; */
+  margin-right: 20px;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  ul.nav-links {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    text-align: center;
+  }
+  ul.nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger div {
+    display: block;
+  }
+}
+ul.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkfade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.active .line2 {
+  opacity: 0;
+}
+.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
