@@ -125,10 +125,12 @@ ul li a:hover {
 @media screen and (max-width: 768px) {
   body {
     overflow: hidden;
-    min-height: 100vh;
   }
   header {
     text-align: center;
+  }
+  main {
+    min-height: 92vh;
   }
   div.logo {
     display: flex;
