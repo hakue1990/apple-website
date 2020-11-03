@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
 body {
   font-family: "Montserrat";
   background: rgb(240, 242, 242);
@@ -28,6 +33,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 div.logo {
   flex: 1;
@@ -123,20 +129,18 @@ ul li a:hover {
 }
 /* smartfon view */
 @media screen and (max-width: 768px) {
-  body {
+  body.html {
+    position: relative;
     overflow: hidden;
   }
   header {
     text-align: center;
-    overflow: hidden;
   }
-  main {
-    height: 92vh;
-    overflow: hidden;
-  }
+
   div.logo {
     display: flex;
   }
+
   ul.nav-links {
     position: absolute;
     right: 0;
@@ -161,7 +165,6 @@ ul li a:hover {
     flex-direction: column-reverse;
     text-align: center;
     height: 92vh;
-    overflow: hidden;
   }
   .presentation h1 {
     font-size: 25px;
@@ -178,17 +181,6 @@ ul li a:hover {
 ul.nav-active {
   transform: translateX(0%);
 }
-
-@keyframes navLinkfade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
 .active .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -200,6 +192,17 @@ ul.nav-active {
 }
 
 /* Animations */
+@keyframes navLinkfade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 @keyframes drop {
   0% {
     opacity: 0;
