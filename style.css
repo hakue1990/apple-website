@@ -130,7 +130,7 @@ ul li a:hover {
     text-align: center;
   }
   main {
-    min-height: 92vh;
+    height: 92vh;
   }
   div.logo {
     display: flex;
@@ -158,12 +158,14 @@ ul li a:hover {
   .presentation {
     flex-direction: column-reverse;
     text-align: center;
+    height: 92vh;
   }
   .presentation h1 {
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
   }
   .presentation p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .cover img {
     height: 250px;
