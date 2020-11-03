@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
+html {
   position: relative;
   overflow-x: hidden;
 }
@@ -16,6 +15,8 @@ body {
     rgba(240, 242, 242, 1) 0%,
     rgba(199, 225, 255, 1) 100%
   );
+  position: relative;
+  overflow-x: hidden;
 }
 /* navigation */
 .logo i {
@@ -33,7 +34,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
 }
 div.logo {
   flex: 1;
@@ -129,10 +129,6 @@ ul li a:hover {
 }
 /* smartfon view */
 @media screen and (max-width: 768px) {
-  body.html {
-    position: relative;
-    overflow: hidden;
-  }
   header {
     text-align: center;
   }
