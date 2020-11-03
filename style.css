@@ -74,7 +74,7 @@ ul li a:hover {
   display: flex;
   width: 90%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 92vh;
   align-items: center;
 }
 .introduction {
@@ -154,6 +154,13 @@ ul li a:hover {
   }
   .presentation {
     flex-direction: column-reverse;
+    text-align: center;
+  }
+  .presentation h1 {
+    font-size: 30px;
+  }
+  .presentation p {
+    font-size: 16px;
   }
   .cover img {
     height: 250px;
