@@ -128,9 +128,11 @@ ul li a:hover {
   }
   header {
     text-align: center;
+    overflow: hidden;
   }
   main {
     height: 92vh;
+    overflow: hidden;
   }
   div.logo {
     display: flex;
