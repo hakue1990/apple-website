@@ -161,6 +161,7 @@ ul li a:hover {
     flex-direction: column-reverse;
     text-align: center;
     height: 92vh;
+    overflow: hidden;
   }
   .presentation h1 {
     font-size: 25px;
