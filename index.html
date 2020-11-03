@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <title>Responsive Website Laptop design</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
@@ -11,23 +17,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">logo</div>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
     <header>
-      <h1>Happy Halloween!</h1>
+      <nav class="navbar">
+        <div class="logo"><i class="fab fa-apple"></i></div>
+        <ul class="nav-links">
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">Ipad</a></li>
+          <li><a href="#">Iphone</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
+    <main>
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>Macbook of the future!</h1>
+            <p>
+              System operacyjny OS X, instalowany wyłącznie na komputerach Mac,
+              od wielu lat zapewnia użytkownikom komputerów marki Apple
+              wyjątkową jakość i stabilność obsługi.
+            </p>
+          </div>
+          <div class="cta">
+            <button class="cta-select">13 inch</button>
+            <button class="cta-add">Add to card</button>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="./img/matebook.png" alt="matebook" />
+        </div>
+      </section>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>

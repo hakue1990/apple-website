@@ -6,9 +6,14 @@
 body {
   font-family: "Montserrat";
 }
+/* navigation */
+.logo i {
+  padding-left: 10px;
+  font-size: 40px;
+}
 nav {
   height: 8vh;
-  background-color: black;
+  background-color: #d8dbe2;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,7 +22,7 @@ div.logo {
   flex: 1;
   padding: 15px;
   width: 10%;
-  color: white;
+  color: black;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -31,49 +36,87 @@ ul.nav-links {
 }
 ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 12px;
   letter-spacing: 3px;
   transition: 0.3s ease-in-out;
 }
 ul li a:hover {
-  font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: url("./halloween.jpg") no-repeat center;
-}
-header h1 {
-  color: white;
-  font-size: 60px;
-}
+
 .burger {
-  /* background-color: red; */
   margin-right: 20px;
 }
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: black;
   margin: 5px;
   display: none;
   transition: 0.3s ease-in-out;
+  border-radius: 20%;
 }
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585722;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+.cta button {
+  padding: 5px 8px 5px 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.3s ease;
+}
+.cta button:hover {
+  background-color: black;
+  color: white;
+}
+.cover {
+  flex: 1;
+}
+
+.cover img {
+  height: 60vh;
+}
+
+/* tablet view */
 @media screen and (max-width: 1024px) {
   ul.nav-links {
     width: 70%;
   }
 }
+/* smartfon view */
 @media screen and (max-width: 768px) {
   body {
     overflow: hidden;
   }
   header {
     text-align: center;
+  }
+  div.logo {
+    display: flex;
   }
   ul.nav-links {
     position: absolute;
@@ -82,7 +125,7 @@ header h1 {
     top: 8vh;
     width: 100%;
     flex-direction: column;
-    background-color: black;
+    background-color: #d8dbe2;
     align-items: center;
     transform: translateX(100%);
     transition: 0.5s ease-in;
@@ -90,6 +133,7 @@ header h1 {
   .nav-links li {
     opacity: 0;
   }
+
   .burger div {
     display: block;
   }
