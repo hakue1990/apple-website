@@ -5,11 +5,22 @@
 }
 body {
   font-family: "Montserrat";
+  background: rgb(240, 242, 242);
+  background: linear-gradient(
+    227deg,
+    rgba(240, 242, 242, 1) 0%,
+    rgba(199, 225, 255, 1) 100%
+  );
 }
 /* navigation */
 .logo i {
   padding-left: 10px;
-  font-size: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
 }
 nav {
   height: 8vh;
@@ -42,7 +53,8 @@ ul li a {
   transition: 0.3s ease-in-out;
 }
 ul li a:hover {
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .burger {
@@ -99,6 +111,8 @@ ul li a:hover {
 
 .cover img {
   height: 60vh;
+  filter: drop-shadow(15px 15px 15px black);
+  animation: drop 0.8s ease;
 }
 
 /* tablet view */
@@ -129,6 +143,7 @@ ul li a:hover {
     align-items: center;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    z-index: 1;
   }
   .nav-links li {
     opacity: 0;
@@ -136,6 +151,13 @@ ul li a:hover {
 
   .burger div {
     display: block;
+  }
+  .presentation {
+    flex-direction: column-reverse;
+  }
+  .cover img {
+    height: 250px;
+    z-index: 0;
   }
 }
 ul.nav-active {
@@ -160,4 +182,16 @@ ul.nav-active {
 }
 .active .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Animations */
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
