@@ -56,11 +56,11 @@ ul li a {
   color: black;
   font-size: 12px;
   letter-spacing: 3px;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 ul li a:hover {
-  font-size: 16px;
-  font-weight: bold;
+  color: #585722;
+  font-weight: 600;
 }
 
 .burger {
@@ -106,10 +106,12 @@ ul li a:hover {
   cursor: pointer;
   border: 1px solid black;
   transition: 0.3s ease;
+  background: transparent;
 }
 .cta button:hover {
-  background-color: black;
-  color: white;
+  background-color: #d8dbe2;
+  color: black;
+  border: 1px solid #d8dbe2;
 }
 .cover {
   flex: 1;
@@ -119,6 +121,14 @@ ul li a:hover {
   height: 60vh;
   filter: drop-shadow(15px 15px 15px black);
   animation: drop 0.8s ease;
+}
+.laptop-select {
+  justify-content: space-between;
+  display: flex;
+  width: 15%;
+  bottom: 10%;
+  position: absolute;
+  right: 21%;
 }
 
 /* tablet view */
@@ -172,6 +182,10 @@ ul li a:hover {
   .cover img {
     height: 250px;
     z-index: 0;
+  }
+  .laptop-select {
+    top: 10%;
+    right: 48%;
   }
 }
 ul.nav-active {
